@@ -2,6 +2,14 @@
 
 Version 0.1.0
 
+Binaries built with Visual Studio 2019 Version **`16.7.2`**
+
+Make sure your version is not older than this.
+
+## Documentation
+
+View the [0.1.0 Documentation here](https://rudy-digipen.github.io/doodle-release/0.1.0/index.html).
+
 ## Install for Visual Studio 2019
 
 Put the `doodle_development` folder at the root of your `C:\` drive
