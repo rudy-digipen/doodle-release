@@ -1,2 +1,5 @@
 # doodle-release
-Release page for the doodle library
+
+This hosts the documentation website for the latest release of doodle
+
+- [Version 0.1.0](0.1.0/index.html)
