@@ -9,5 +9,5 @@
 
 namespace doodle
 {
-    constexpr auto VERSION = "0.1.0";
+    constexpr auto VERSION = "0.2.1";
 }
