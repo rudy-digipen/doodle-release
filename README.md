@@ -1,6 +1,6 @@
 # doodle-release
 
-Version 0.2.1
+Version 0.2.2
 
 Binaries built with Visual Studio 2019 Version **`16.8.4`**
 
@@ -8,7 +8,7 @@ Make sure your version is not older than this.
 
 ## Documentation
 
-View the [0.2.1 Documentation here](https://rudy-digipen.github.io/doodle-release/0.2.1/index.html).
+View the [0.2 Documentation here](https://rudy-digipen.github.io/doodle-release/0.2/index.html).
 
 ## Install for Visual Studio 2019
 
@@ -53,4 +53,6 @@ int main(void)
 - lib files should be more forward compatible with future versions of Visual Studio now that we are no longer using the `/GL` flag _(We turned off whole program optimization)_. See [C++ binary compatibility between Visual Studio 2015, 2017, and 2019](https://docs.microsoft.com/en-us/cpp/porting/binary-compat-2015-2017) for more related info.
 - doodle internals no longer use the CS230 namespace name
     * This was causing name conflicts with the current CS230 class code
+- Optmized Image loading
+- Ask OpenGL implementation for smoother looking lines and polygons
 
