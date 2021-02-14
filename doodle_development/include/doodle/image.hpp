@@ -202,7 +202,9 @@ namespace doodle
          *
          * \return const iterator to the first element
          *
-         *
+         * 
+         * \include ImageClass_begin_const.cpp
+         * 
          */
         const Color* begin() const;
         /**
