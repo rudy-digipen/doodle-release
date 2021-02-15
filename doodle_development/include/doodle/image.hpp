@@ -1,5 +1,5 @@
 ﻿/*--------------------------------------------------------------*
-  Copyright (C) 2019 Rudy Castan
+  Copyright (C) 2021 Rudy Castan
 
   This file is distributed WITHOUT ANY WARRANTY. See the file
   `License.md' for details.
@@ -178,7 +178,7 @@ namespace doodle
          *
          * Usage of this will trigger creating a new GPU texture when the Image is drawn via draw_image().
          *
-         * Having a begin/end interface enables the Image class to be used with for range loops and the std <algorithm>
+         * Having a begin/end interface enables the Image class to be used with for range loops and the std `<algorithm>`
          * functions.
          *
          * \return iterator to the first element
@@ -187,8 +187,14 @@ namespace doodle
          */
         Color* begin();
         /**
-         * \brief
-         * \return
+         * \brief Returns an iterator to the color following the last color of the Image.
+         *
+         * This color acts as a placeholder; attempting to access it results in undefined behavior.
+         *
+         * Having a begin/end interface enables the Image class to be used with for range loops and the std
+         * `<algorithm>` functions.
+         *
+         * \return iterator to a color following the last color
          *
          *
          */
@@ -197,14 +203,14 @@ namespace doodle
         /**
          * \brief Returns a const iterator to the first color of the Image.
          *
-         * Having a begin/end interface enables the Image class to be used with for range loops and the std <algorithm>
+         * Having a begin/end interface enables the Image class to be used with for range loops and the std `<algorithm>`
          * functions.
          *
          * \return const iterator to the first element
          *
-         * 
+         *
          * \include ImageClass_begin_const.cpp
-         * 
+         *
          */
         const Color* begin() const;
         /**
@@ -212,7 +218,7 @@ namespace doodle
          *
          * This color acts as a placeholder; attempting to access it results in undefined behavior.
          *
-         * Having a begin/end interface enables the Image class to be used with for range loops and the std <algorithm>
+         * Having a begin/end interface enables the Image class to be used with for range loops and the std `<algorithm>`
          * functions.
          *
          * \return const iterator to a color following the last color
@@ -226,13 +232,17 @@ namespace doodle
         std::shared_ptr<ImageImpl> impl{};
 
     private:
-        friend void draw_image(const Image& image, double x, double y) noexcept;
-        friend void draw_image(const Image& image, double x, double y, double width, double height) noexcept;
-        friend void draw_image(const Image& image, double x, double y, double width, double height) noexcept;
-        friend void draw_image(const Image& image, double x, double y, double width, double height, int texel_x,
-                               int texel_y) noexcept;
-        friend void draw_image(const Image& image, double x, double y, double width, double height, int texel_x,
-                               int texel_y, int texel_width, int texel_height) noexcept;
+        friend void  draw_image(const Image& image, double x, double y) noexcept;
+        friend void  draw_image(const Image& image, double x, double y, double width, double height) noexcept;
+        friend void  draw_image(const Image& image, double x, double y, double width, double height) noexcept;
+        friend void  draw_image(const Image& image, double x, double y, double width, double height, int texel_x,
+                                int texel_y) noexcept;
+        friend void  draw_image(const Image& image, double x, double y, double width, double height, int texel_x,
+                                int texel_y, int texel_width, int texel_height) noexcept;
+        friend Image end_drawing_to_image(bool smooth_texture);
+
+    public:
+        explicit Image(const std::shared_ptr<ImageImpl>& impl);
     };
     /** @} */
 }

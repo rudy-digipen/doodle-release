@@ -1,5 +1,5 @@
 ﻿/*--------------------------------------------------------------*
-  Copyright (C) 2019 Rudy Castan
+  Copyright (C) 2021 Rudy Castan
 
   This file is distributed WITHOUT ANY WARRANTY. See the file
   `License.md' for details.
@@ -510,8 +510,9 @@ namespace doodle
      * \brief Given a file path to a *.fnt file it will create a distance field bitmap font.
      *
      * It will parse that file to get all of the Bitmap information and create GPU texture instances of all the image
-     * files listed. It assumes that the image files are in the same folder directory as the provided *.fnt file. It will
-     * return a positive value on success and a negative value if it failed to parse the *.fnt file for whatever reason.
+     * files listed. It assumes that the image files are in the same folder directory as the provided *.fnt file. It
+     * will return a positive value on success and a negative value if it failed to parse the *.fnt file for whatever
+     * reason.
      *
      * The default font, provided with doodle has a font ID of \f$0\f$ and is specified by doodle::DEFAULT_FONT_ID.
      *
@@ -715,7 +716,7 @@ namespace doodle
      *
      */
     void draw_image(const Image& image, double x, double y, double width, double height, int texel_x,
-                      int texel_y) noexcept;
+                    int texel_y) noexcept;
     /**
      * \brief Draw a subsection of the image to the screen.
      *
@@ -757,7 +758,7 @@ namespace doodle
      *
      */
     void draw_image(const Image& image, double x, double y, double width, double height, int texel_x, int texel_y,
-                      int texel_width, int texel_height) noexcept;
+                    int texel_width, int texel_height) noexcept;
     /**
      * \brief Sets the fill value for displaying images to the specified HexColor.
      *
@@ -915,6 +916,36 @@ namespace doodle
      *
      */
     void apply_matrix(double a, double b, double c, double d, double e, double f) noexcept;
+
+    /** @} */
+
+    /**
+     *  * \addtogroup Image
+     *  Functions for drawing to an Image.
+     *  @{
+     */
+
+    /**
+     * \brief Redirect all draw command to draw to an image
+     * \param image_width The desired width of the image
+     * \param image_height The desired height of the image
+     * \param apply_antialiasing Should multi-sample anti-aliasing be applied?
+     *
+     * \include begin_drawing_to_image.cpp
+     *
+     */
+    void begin_drawing_to_image(int image_width, int image_height, bool apply_antialiasing = false);
+
+    /**
+     * \brief End a session of drawing to an image
+     * \param smooth_texture Should the texture use a smooth filtering when being drawn
+     * \return An Image representing what was drawn.
+     *
+     * \include end_drawing_to_image.cpp
+     *
+     */
+    Image end_drawing_to_image(bool smooth_texture = false);
+
     /** @} */
 
 }
