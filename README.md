@@ -53,6 +53,7 @@ int main(void)
 - lib files should be more forward compatible with future versions of Visual Studio now that we are no longer using the `/GL` flag _(We turned off whole program optimization)_. See [C++ binary compatibility between Visual Studio 2015, 2017, and 2019](https://docs.microsoft.com/en-us/cpp/porting/binary-compat-2015-2017) for more related info.
 - doodle internals no longer use the CS230 namespace name
     * This was causing name conflicts with the current CS230 class code
-- Optmized Image loading
+- Optimized Image loading
 - Ask OpenGL implementation for smoother looking lines and polygons
+- Image class is more lightweight for the most common case of simply loading an image file and drawing it without modification
 
