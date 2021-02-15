@@ -389,6 +389,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gae3d90cff22ff02c2830c29ed9df6962e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___transform.html#gae3d90cff22ff02c2830c29ed9df6962e">apply_matrix</a> (double a, double b, double c, double d, double e, double f) noexcept</td></tr>
 <tr class="memdesc:gae3d90cff22ff02c2830c29ed9df6962e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplies the current matrix by the one specified through the parameters.  <a href="group___transform.html#gae3d90cff22ff02c2830c29ed9df6962e">More...</a><br /></td></tr>
 <tr class="separator:gae3d90cff22ff02c2830c29ed9df6962e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5846e12b62d2ddd99a1d5309a4974574"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___image.html#ga5846e12b62d2ddd99a1d5309a4974574">begin_drawing_to_image</a> (int image_width, int image_height, bool apply_antialiasing=false)</td></tr>
+<tr class="memdesc:ga5846e12b62d2ddd99a1d5309a4974574"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redirect all draw command to draw to an image.  <a href="group___image.html#ga5846e12b62d2ddd99a1d5309a4974574">More...</a><br /></td></tr>
+<tr class="separator:ga5846e12b62d2ddd99a1d5309a4974574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga592cfddc99dfdf8f8b05185c579d3b0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdoodle_1_1_image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___image.html#ga592cfddc99dfdf8f8b05185c579d3b0f">end_drawing_to_image</a> (bool smooth_texture=false)</td></tr>
+<tr class="memdesc:ga592cfddc99dfdf8f8b05185c579d3b0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">End a session of drawing to an image.  <a href="group___image.html#ga592cfddc99dfdf8f8b05185c579d3b0f">More...</a><br /></td></tr>
+<tr class="separator:ga592cfddc99dfdf8f8b05185c579d3b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga53c8b50e243b21a145abee22bbafb738"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___utility.html#ga53c8b50e243b21a145abee22bbafb738">to_string</a> (<a class="el" href="namespacedoodle.html#a4404dabf07df15057897fc7121465fa2">MouseButtons</a> button) noexcept</td></tr>
 <tr class="memdesc:ga53c8b50e243b21a145abee22bbafb738"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert MouseButtons enum to std::string.  <a href="group___utility.html#ga53c8b50e243b21a145abee22bbafb738">More...</a><br /></td></tr>
 <tr class="separator:ga53c8b50e243b21a145abee22bbafb738"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -548,7 +554,7 @@ Variables</h2></td></tr>
 <tr class="memitem:ga669f5aac96117b75646253a3e8fb504a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacedoodle.html#a4404dabf07df15057897fc7121465fa2">MouseButtons</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___events.html#ga669f5aac96117b75646253a3e8fb504a">MouseButton</a></td></tr>
 <tr class="memdesc:ga669f5aac96117b75646253a3e8fb504a"><td class="mdescLeft">&#160;</td><td class="mdescRight">doodle automatically tracks if the mouse button is pressed and which button is pressed. The value of the system variable MouseButton is either LEFT, RIGHT, or CENTER depending on which button was pressed last.  <a href="group___events.html#ga669f5aac96117b75646253a3e8fb504a">More...</a><br /></td></tr>
 <tr class="separator:ga669f5aac96117b75646253a3e8fb504a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecc79864cbb5ed9c16267d811872003f"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedoodle.html#aecc79864cbb5ed9c16267d811872003f">VERSION</a> = &quot;0.2.2&quot;</td></tr>
+<tr class="memitem:aecc79864cbb5ed9c16267d811872003f"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedoodle.html#aecc79864cbb5ed9c16267d811872003f">VERSION</a> = &quot;0.2.4&quot;</td></tr>
 <tr class="separator:aecc79864cbb5ed9c16267d811872003f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf5d009e312a2aec67cd80825893a6159"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___environment.html#gaf5d009e312a2aec67cd80825893a6159">WindowIsFocused</a></td></tr>
 <tr class="memdesc:gaf5d009e312a2aec67cd80825893a6159"><td class="mdescLeft">&#160;</td><td class="mdescRight">Confirms if the window a doodle program is in is "focused," meaning that the doodle will accept mouse or keyboard input. This variable is "true" if the window is focused and "false" if not.  <a href="group___environment.html#gaf5d009e312a2aec67cd80825893a6159">More...</a><br /></td></tr>
@@ -1018,7 +1024,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr auto doodle::VERSION = &quot;0.2.2&quot;</td>
+          <td class="memname">constexpr auto doodle::VERSION = &quot;0.2.4&quot;</td>
         </tr>
       </table>
   </td>

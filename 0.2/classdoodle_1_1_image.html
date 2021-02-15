@@ -142,6 +142,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a4530a53fb2208f6dad6b8e133ae49852"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator to the first color of the <a class="el" href="classdoodle_1_1_image.html" title="Image class to store a 2D array of RGBA colors. Also manages an image on the Graphics Card.">Image</a>.  <a href="classdoodle_1_1_image.html#a4530a53fb2208f6dad6b8e133ae49852">More...</a><br /></td></tr>
 <tr class="separator:a4530a53fb2208f6dad6b8e133ae49852"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab86676ba00d11d7104ab2483c2949679"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdoodle_1_1_color.html">Color</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoodle_1_1_image.html#ab86676ba00d11d7104ab2483c2949679">end</a> ()</td></tr>
+<tr class="memdesc:ab86676ba00d11d7104ab2483c2949679"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator to the color following the last color of the <a class="el" href="classdoodle_1_1_image.html" title="Image class to store a 2D array of RGBA colors. Also manages an image on the Graphics Card.">Image</a>.  <a href="classdoodle_1_1_image.html#ab86676ba00d11d7104ab2483c2949679">More...</a><br /></td></tr>
 <tr class="separator:ab86676ba00d11d7104ab2483c2949679"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a868d5ee730c08cb570c237cc03846405"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdoodle_1_1_color.html">Color</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoodle_1_1_image.html#a868d5ee730c08cb570c237cc03846405">begin</a> () const</td></tr>
 <tr class="memdesc:a868d5ee730c08cb570c237cc03846405"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const iterator to the first color of the <a class="el" href="classdoodle_1_1_image.html" title="Image class to store a 2D array of RGBA colors. Also manages an image on the Graphics Card.">Image</a>.  <a href="classdoodle_1_1_image.html#a868d5ee730c08cb570c237cc03846405">More...</a><br /></td></tr>
@@ -149,6 +150,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0fa42e99c931d10e57ea676792408ea0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdoodle_1_1_color.html">Color</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoodle_1_1_image.html#a0fa42e99c931d10e57ea676792408ea0">end</a> () const</td></tr>
 <tr class="memdesc:a0fa42e99c931d10e57ea676792408ea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const iterator to the color following the last color of the <a class="el" href="classdoodle_1_1_image.html" title="Image class to store a 2D array of RGBA colors. Also manages an image on the Graphics Card.">Image</a>.  <a href="classdoodle_1_1_image.html#a0fa42e99c931d10e57ea676792408ea0">More...</a><br /></td></tr>
 <tr class="separator:a0fa42e99c931d10e57ea676792408ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7a630aeef1603b70053e87a71e3338b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoodle_1_1_image.html#ab7a630aeef1603b70053e87a71e3338b">Image</a> (const std::shared_ptr&lt; ImageImpl &gt; &amp;impl)</td></tr>
+<tr class="separator:ab7a630aeef1603b70053e87a71e3338b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -173,6 +176,9 @@ Friends</h2></td></tr>
 <tr class="memitem:a6a8ce233e9d32aa45c267ba81762190f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoodle_1_1_image.html#a6a8ce233e9d32aa45c267ba81762190f">draw_image</a> (const <a class="el" href="classdoodle_1_1_image.html">Image</a> &amp;image, double x, double y, double width, double height, int texel_x, int texel_y, int texel_width, int texel_height) noexcept</td></tr>
 <tr class="memdesc:a6a8ce233e9d32aa45c267ba81762190f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw a subsection of the image to the screen.  <a href="classdoodle_1_1_image.html#a6a8ce233e9d32aa45c267ba81762190f">More...</a><br /></td></tr>
 <tr class="separator:a6a8ce233e9d32aa45c267ba81762190f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc985c3c0ed467cfc5cb4affa783ec47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdoodle_1_1_image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoodle_1_1_image.html#afc985c3c0ed467cfc5cb4affa783ec47">end_drawing_to_image</a> (bool smooth_texture)</td></tr>
+<tr class="memdesc:afc985c3c0ed467cfc5cb4affa783ec47"><td class="mdescLeft">&#160;</td><td class="mdescRight">End a session of drawing to an image.  <a href="classdoodle_1_1_image.html#afc985c3c0ed467cfc5cb4affa783ec47">More...</a><br /></td></tr>
+<tr class="separator:afc985c3c0ed467cfc5cb4affa783ec47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classdoodle_1_1_image.html" title="Image class to store a 2D array of RGBA colors. Also manages an image on the Graphics Card.">Image</a> class to store a 2D array of RGBA colors. Also manages an image on the Graphics Card. </p>
@@ -221,7 +227,7 @@ Friends</h2></td></tr>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a30b00699217159c1e64a006052f8ecfb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30b00699217159c1e64a006052f8ecfb">&#9670;&nbsp;</a></span>Image() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a30b00699217159c1e64a006052f8ecfb">&#9670;&nbsp;</a></span>Image() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -314,13 +320,13 @@ Friends</h2></td></tr>
 <div class="ttc" id="agroup___utility_html_ga681ce01e89b14985cf59109ea3d3c33e"><div class="ttname"><a href="group___utility.html#ga681ce01e89b14985cf59109ea3d3c33e">doodle::noise</a></div><div class="ttdeci">double noise(double x, double y=0.0, double z=0.0) noexcept</div><div class="ttdoc">Returns the Perlin noise value at specified coordinates.</div></div>
 <div class="ttc" id="anamespacedoodle_html"><div class="ttname"><a href="namespacedoodle.html">doodle</a></div><div class="ttdef"><b>Definition:</b> <a href="angle_8hpp_source.html#l00010">angle.hpp:11</a></div></div>
 </div><!-- fragment --> <div class="image">
-<img src="images\image\creatingimages\ImageClass_ctor_width_height.gif" alt=""/>
+<img src="ImageClass_ctor_width_height.gif" alt=""/>
 </div>
  
 </div>
 </div>
 <a id="aadfdb91d5e408f6ecc1f1a4a8cdcfdf4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadfdb91d5e408f6ecc1f1a4a8cdcfdf4">&#9670;&nbsp;</a></span>Image() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aadfdb91d5e408f6ecc1f1a4a8cdcfdf4">&#9670;&nbsp;</a></span>Image() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -397,13 +403,13 @@ Friends</h2></td></tr>
 <div class="line">}</div>
 <div class="ttc" id="agroup___color_html_gac592a18f63517e14b61d6319176b38b1"><div class="ttname"><a href="group___color.html#gac592a18f63517e14b61d6319176b38b1">doodle::clear_background</a></div><div class="ttdeci">void clear_background() noexcept</div><div class="ttdoc">Clear the background to black.</div></div>
 </div><!-- fragment --> <div class="image">
-<img src="images\image\creatingimages\ImageClass_Ctor_file.png" alt=""/>
+<img src="ImageClass_Ctor_file.png" alt=""/>
 </div>
  
 </div>
 </div>
 <a id="a040540c826b461c1e387a7125268d2bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a040540c826b461c1e387a7125268d2bc">&#9670;&nbsp;</a></span>Image() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a040540c826b461c1e387a7125268d2bc">&#9670;&nbsp;</a></span>Image() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -419,6 +425,32 @@ Friends</h2></td></tr>
 
 <p>Creates an empty image. </p>
 <dl class="section pre"><dt>Precondition</dt><dd>Since this involves talking with the GPU a connection must already be established, so <a class="el" href="group___environment.html#ga6afd5ec8409ff37b931ed326a438ca8f" title="Create a default window.">create_window()</a> must have already been called. </dd></dl>
+
+</div>
+</div>
+<a id="ab7a630aeef1603b70053e87a71e3338b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7a630aeef1603b70053e87a71e3338b">&#9670;&nbsp;</a></span>Image() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">doodle::Image::Image </td>
+          <td>(</td>
+          <td class="paramtype">const std::shared_ptr&lt; ImageImpl &gt; &amp;&#160;</td>
+          <td class="paramname"><em>impl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -440,7 +472,7 @@ Friends</h2></td></tr>
 
 <p>Returns an iterator to the first color of the <a class="el" href="classdoodle_1_1_image.html" title="Image class to store a 2D array of RGBA colors. Also manages an image on the Graphics Card.">Image</a>. </p>
 <p>Usage of this will trigger creating a new GPU texture when the <a class="el" href="classdoodle_1_1_image.html" title="Image class to store a 2D array of RGBA colors. Also manages an image on the Graphics Card.">Image</a> is drawn via <a class="el" href="classdoodle_1_1_image.html#a8039de98c9c890b24551b5bdd4b90c9a" title="Draw an entire image to the screen.">draw_image()</a>.</p>
-<p>Having a begin/end interface enables the <a class="el" href="classdoodle_1_1_image.html" title="Image class to store a 2D array of RGBA colors. Also manages an image on the Graphics Card.">Image</a> class to be used with for range loops and the std &lt;algorithm&gt; functions.</p>
+<p>Having a begin/end interface enables the <a class="el" href="classdoodle_1_1_image.html" title="Image class to store a 2D array of RGBA colors. Also manages an image on the Graphics Card.">Image</a> class to be used with for range loops and the std <code>&lt;algorithm&gt;</code> functions.</p>
 <dl class="section return"><dt>Returns</dt><dd>iterator to the first element</dd></dl>
 <p>The following example uses this orange hero image file. <img src="orange_hero.png" alt="" class="inline"/></p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
@@ -501,7 +533,7 @@ Friends</h2></td></tr>
 <div class="ttc" id="agroup___transform_html_gac6309e569e1df1524a83f9e32d723aaa"><div class="ttname"><a href="group___transform.html#gac6309e569e1df1524a83f9e32d723aaa">doodle::apply_scale</a></div><div class="ttdeci">void apply_scale(double scale) noexcept</div><div class="ttdoc">Uniformly increases or decreases the size of a shape by expanding and contracting vertices.</div></div>
 <div class="ttc" id="agroup___utility_html_gae24cf4a69b0dfdf3afd08bea69dcf40b"><div class="ttname"><a href="group___utility.html#gae24cf4a69b0dfdf3afd08bea69dcf40b">doodle::random</a></div><div class="ttdeci">double random(double min_inclusive, double max_exclusive) noexcept</div><div class="ttdoc">Return a random floating-point number within the range [min,max)</div></div>
 </div><!-- fragment --> <div class="image">
-<img src="images\image\creatingimages\ImageClass_combined_color.png" alt=""/>
+<img src="ImageClass_combined_color.png" alt=""/>
 </div>
  
 </div>
@@ -522,7 +554,7 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns a const iterator to the first color of the <a class="el" href="classdoodle_1_1_image.html" title="Image class to store a 2D array of RGBA colors. Also manages an image on the Graphics Card.">Image</a>. </p>
-<p>Having a begin/end interface enables the <a class="el" href="classdoodle_1_1_image.html" title="Image class to store a 2D array of RGBA colors. Also manages an image on the Graphics Card.">Image</a> class to be used with for range loops and the std &lt;algorithm&gt; functions.</p>
+<p>Having a begin/end interface enables the <a class="el" href="classdoodle_1_1_image.html" title="Image class to store a 2D array of RGBA colors. Also manages an image on the Graphics Card.">Image</a> class to be used with for range loops and the std <code>&lt;algorithm&gt;</code> functions.</p>
 <dl class="section return"><dt>Returns</dt><dd>const iterator to the first element</dd></dl>
 <p>The following example uses this orange hero image file. <img src="orange_hero.png" alt="" class="inline"/></p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="doodle_8hpp.html">doodle/doodle.hpp</a>&gt;</span></div>
@@ -566,7 +598,7 @@ Friends</h2></td></tr>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">}</div>
 </div><!-- fragment --><div class="image">
-<img src="images\image\creatingimages\ImageClass_average_color.png" alt=""/>
+<img src="ImageClass_average_color.png" alt=""/>
 </div>
  
 </div>
@@ -585,7 +617,11 @@ Friends</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+<p>Returns an iterator to the color following the last color of the <a class="el" href="classdoodle_1_1_image.html" title="Image class to store a 2D array of RGBA colors. Also manages an image on the Graphics Card.">Image</a>. </p>
+<p>This color acts as a placeholder; attempting to access it results in undefined behavior.</p>
+<p>Having a begin/end interface enables the <a class="el" href="classdoodle_1_1_image.html" title="Image class to store a 2D array of RGBA colors. Also manages an image on the Graphics Card.">Image</a> class to be used with for range loops and the std <code>&lt;algorithm&gt;</code> functions.</p>
+<dl class="section return"><dt>Returns</dt><dd>iterator to a color following the last color</dd></dl>
 <p>The following example uses this orange hero image file. <img src="orange_hero.png" alt="" class="inline"/></p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="doodle_8hpp.html">doodle/doodle.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;exception&gt;</span></div>
@@ -646,7 +682,7 @@ Friends</h2></td></tr>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">}</div>
 </div><!-- fragment --> <div class="image">
-<img src="images\image\creatingimages\ImageClass_combined_color.png" alt=""/>
+<img src="ImageClass_combined_color.png" alt=""/>
 </div>
  
 </div>
@@ -668,7 +704,7 @@ Friends</h2></td></tr>
 
 <p>Returns a const iterator to the color following the last color of the <a class="el" href="classdoodle_1_1_image.html" title="Image class to store a 2D array of RGBA colors. Also manages an image on the Graphics Card.">Image</a>. </p>
 <p>This color acts as a placeholder; attempting to access it results in undefined behavior.</p>
-<p>Having a begin/end interface enables the <a class="el" href="classdoodle_1_1_image.html" title="Image class to store a 2D array of RGBA colors. Also manages an image on the Graphics Card.">Image</a> class to be used with for range loops and the std &lt;algorithm&gt; functions.</p>
+<p>Having a begin/end interface enables the <a class="el" href="classdoodle_1_1_image.html" title="Image class to store a 2D array of RGBA colors. Also manages an image on the Graphics Card.">Image</a> class to be used with for range loops and the std <code>&lt;algorithm&gt;</code> functions.</p>
 <dl class="section return"><dt>Returns</dt><dd>const iterator to a color following the last color</dd></dl>
 <p>The following example uses this orange hero image file. <img src="orange_hero.png" alt="" class="inline"/></p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="doodle_8hpp.html">doodle/doodle.hpp</a>&gt;</span></div>
@@ -709,7 +745,7 @@ Friends</h2></td></tr>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">}</div>
 </div><!-- fragment --> <div class="image">
-<img src="images\image\creatingimages\ImageClass_average_color.png" alt=""/>
+<img src="ImageClass_average_color.png" alt=""/>
 </div>
  
 </div>
@@ -954,7 +990,7 @@ Friends</h2></td></tr>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">}</div>
 </div><!-- fragment --> <div class="image">
-<img src="images\image\creatingimages\ImageClass_operator_column_row.png" alt=""/>
+<img src="ImageClass_operator_column_row.png" alt=""/>
 </div>
  
 </div>
@@ -1057,7 +1093,7 @@ Friends</h2></td></tr>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">}</div>
 </div><!-- fragment --> <div class="image">
-<img src="images\image\creatingimages\ImageClass_operator_column_row.png" alt=""/>
+<img src="ImageClass_operator_column_row.png" alt=""/>
 </div>
  
 </div>
@@ -1143,7 +1179,7 @@ Friends</h2></td></tr>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">}</div>
 </div><!-- fragment --> <div class="image">
-<img src="images\image\creatingimages\ImageClass_operator_index.png" alt=""/>
+<img src="ImageClass_operator_index.png" alt=""/>
 </div>
  
 </div>
@@ -1228,7 +1264,7 @@ Friends</h2></td></tr>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">}</div>
 </div><!-- fragment --> <div class="image">
-<img src="images\image\creatingimages\ImageClass_operator_index.png" alt=""/>
+<img src="ImageClass_operator_index.png" alt=""/>
 </div>
  
 </div>
@@ -1346,7 +1382,7 @@ Friends</h2></td></tr>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">}</div>
 </div><!-- fragment --> <div class="image">
-<img src="images\image\displayingimages\draw_image_1.png" alt=""/>
+<img src="draw_image_1.png" alt=""/>
 </div>
  
 </div>
@@ -1439,7 +1475,7 @@ Friends</h2></td></tr>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">}</div>
 </div><!-- fragment --> <div class="image">
-<img src="images\image\displayingimages\draw_image_2.png" alt=""/>
+<img src="draw_image_2.png" alt=""/>
 </div>
  
 </div>
@@ -1532,7 +1568,7 @@ Friends</h2></td></tr>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">}</div>
 </div><!-- fragment --> <div class="image">
-<img src="images\image\displayingimages\draw_image_2.png" alt=""/>
+<img src="draw_image_2.png" alt=""/>
 </div>
  
 </div>
@@ -1657,7 +1693,7 @@ Friends</h2></td></tr>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">}</div>
 </div><!-- fragment --> <div class="image">
-<img src="images\image\displayingimages\draw_image_3.png" alt=""/>
+<img src="draw_image_3.png" alt=""/>
 </div>
  
 </div>
@@ -1796,7 +1832,105 @@ Friends</h2></td></tr>
 <div class="line">    <span class="keywordflow">return</span> -1;</div>
 <div class="line">}</div>
 </div><!-- fragment --> <div class="image">
-<img src="images\image\displayingimages\draw_image_4.png" alt=""/>
+<img src="draw_image_4.png" alt=""/>
+</div>
+ 
+</div>
+</div>
+<a id="afc985c3c0ed467cfc5cb4affa783ec47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc985c3c0ed467cfc5cb4affa783ec47">&#9670;&nbsp;</a></span>end_drawing_to_image</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classdoodle_1_1_image.html">Image</a> end_drawing_to_image </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>smooth_texture</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>End a session of drawing to an image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">smooth_texture</td><td>Should the texture use a smooth filtering when being drawn </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>An <a class="el" href="classdoodle_1_1_image.html" title="Image class to store a 2D array of RGBA colors. Also manages an image on the Graphics Card.">Image</a> representing what was drawn.</dd></dl>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="doodle_8hpp.html">doodle/doodle.hpp</a>&gt;</span></div>
+<div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacedoodle.html">doodle</a>;</div>
+<div class="line"> </div>
+<div class="line"><a class="code" href="classdoodle_1_1_image.html#a040540c826b461c1e387a7125268d2bc">Image</a> GenerateExampleImage(<span class="keywordtype">bool</span> smooth_filter);</div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)</div>
+<div class="line">{</div>
+<div class="line">    <a class="code" href="group___environment.html#ga6afd5ec8409ff37b931ed326a438ca8f">create_window</a>(480, 320);</div>
+<div class="line">    <span class="keyword">const</span> <a class="code" href="classdoodle_1_1_image.html#a040540c826b461c1e387a7125268d2bc">Image</a> smiley_nosmooth = GenerateExampleImage(<span class="keyword">false</span>);</div>
+<div class="line">    <span class="keyword">const</span> <a class="code" href="classdoodle_1_1_image.html#a040540c826b461c1e387a7125268d2bc">Image</a> smiley_smooth   = GenerateExampleImage(<span class="keyword">true</span>);</div>
+<div class="line">    <a class="code" href="group___image.html#gae34c0040d76b737adb3bdd678dc863bc">set_image_mode</a>(<a class="code" href="group___shape.html#gga71d46fd68c6ad681f75ff8a08999f146a4f1f6016fc9f3f2353c0cc7c67b292bd">RectMode::Center</a>);</div>
+<div class="line">    <span class="keywordflow">while</span> (!<a class="code" href="group___environment.html#ga9e499952e3a46f046da8720cc990a5bd">is_window_closed</a>())</div>
+<div class="line">    {</div>
+<div class="line">        <a class="code" href="group___environment.html#gad97282241c719711c6f891261f389dd0">update_window</a>();</div>
+<div class="line">        <a class="code" href="group___color.html#gac592a18f63517e14b61d6319176b38b1">clear_background</a>(100, 149, 237);</div>
+<div class="line">        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 20; i++)</div>
+<div class="line">            <a class="code" href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">draw_ellipse</a>(0, -<a class="code" href="group___environment.html#gac91bc24ae4e908eb49c13365c9bd30be">Height</a> / 2.0 + i * 20.0, 10);</div>
+<div class="line">        <a class="code" href="classdoodle_1_1_image.html#a8039de98c9c890b24551b5bdd4b90c9a">draw_image</a>(smiley_nosmooth, 0, 0);</div>
+<div class="line">        <a class="code" href="classdoodle_1_1_image.html#a8039de98c9c890b24551b5bdd4b90c9a">draw_image</a>(smiley_smooth, -<a class="code" href="group___environment.html#ga9aadbff55be8829543f55e80a837c4d6">Width</a> / 3.0, 0.0, 200, 200);</div>
+<div class="line">        <a class="code" href="classdoodle_1_1_image.html#a8039de98c9c890b24551b5bdd4b90c9a">draw_image</a>(smiley_nosmooth, <a class="code" href="group___environment.html#ga9aadbff55be8829543f55e80a837c4d6">Width</a> / 3.0, 0.0, 200, 200);</div>
+<div class="line">    }</div>
+<div class="line">    <span class="keywordflow">return</span> 0;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line"><a class="code" href="classdoodle_1_1_image.html#a040540c826b461c1e387a7125268d2bc">Image</a> GenerateExampleImage(<span class="keywordtype">bool</span> smooth_filter)</div>
+<div class="line">{</div>
+<div class="line">    constexpr <span class="keywordtype">double</span> diameter     = 100.0;</div>
+<div class="line">    constexpr <span class="keywordtype">double</span> size_scale   = 0.25;</div>
+<div class="line">    constexpr <span class="keywordtype">int</span>    image_width  = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(diameter);</div>
+<div class="line">    constexpr <span class="keywordtype">int</span>    image_height = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(diameter);</div>
+<div class="line">    <a class="code" href="group___image.html#ga5846e12b62d2ddd99a1d5309a4974574">begin_drawing_to_image</a>(image_width, image_height);</div>
+<div class="line">    <a class="code" href="group___shape.html#gafa718880dada53130d123e015863f930">push_settings</a>();</div>
+<div class="line">    <a class="code" href="group___color.html#ga388ad96b9e870b646ff128e494e13543">set_fill_color</a>(255, 255, 0);</div>
+<div class="line"> </div>
+<div class="line">    <a class="code" href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">draw_ellipse</a>(0, 0, diameter);</div>
+<div class="line"> </div>
+<div class="line">    <a class="code" href="group___color.html#ga388ad96b9e870b646ff128e494e13543">set_fill_color</a>(255);</div>
+<div class="line">    <a class="code" href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">draw_ellipse</a>(-67 * size_scale, -67 * size_scale, diameter / 10);</div>
+<div class="line">    <a class="code" href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">draw_ellipse</a>(67 * size_scale, -67 * size_scale, diameter / 10);</div>
+<div class="line">    <a class="code" href="group___color.html#ga388ad96b9e870b646ff128e494e13543">set_fill_color</a>(0);</div>
+<div class="line">    <a class="code" href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">draw_ellipse</a>(-67 * size_scale, -67 * size_scale, diameter / 20);</div>
+<div class="line">    <a class="code" href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">draw_ellipse</a>(67 * size_scale, -67 * size_scale, diameter / 20);</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">    <a class="code" href="group___shape.html#ga4081661ba614124ef46d1e2ac01f5ad6">set_outline_width</a>(3.0);</div>
+<div class="line">    <a class="code" href="group___color.html#ga6527ae09583f7a13f7ee9318210ce7bd">no_fill</a>();</div>
+<div class="line">    <a class="code" href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">draw_ellipse</a>(0, 67 * size_scale, diameter / 2 * size_scale, 90 * size_scale);</div>
+<div class="line"> </div>
+<div class="line">    <a class="code" href="group___shape.html#ga88f08686eb0cc501e50ac6e3eab61787">pop_settings</a>();</div>
+<div class="line"> </div>
+<div class="line">    <span class="keywordflow">return</span> <a class="code" href="classdoodle_1_1_image.html#afc985c3c0ed467cfc5cb4affa783ec47">end_drawing_to_image</a>(smooth_filter);</div>
+<div class="line">}</div>
+<div class="ttc" id="aclassdoodle_1_1_image_html_afc985c3c0ed467cfc5cb4affa783ec47"><div class="ttname"><a href="classdoodle_1_1_image.html#afc985c3c0ed467cfc5cb4affa783ec47">doodle::Image::end_drawing_to_image</a></div><div class="ttdeci">friend Image end_drawing_to_image(bool smooth_texture)</div><div class="ttdoc">End a session of drawing to an image.</div></div>
+<div class="ttc" id="agroup___color_html_ga388ad96b9e870b646ff128e494e13543"><div class="ttname"><a href="group___color.html#ga388ad96b9e870b646ff128e494e13543">doodle::set_fill_color</a></div><div class="ttdeci">void set_fill_color(HexColor color) noexcept</div><div class="ttdoc">Sets the color used to fill shapes to the specified HexColor.</div></div>
+<div class="ttc" id="agroup___color_html_ga6527ae09583f7a13f7ee9318210ce7bd"><div class="ttname"><a href="group___color.html#ga6527ae09583f7a13f7ee9318210ce7bd">doodle::no_fill</a></div><div class="ttdeci">void no_fill() noexcept</div><div class="ttdoc">Disables filling geometry.</div></div>
+<div class="ttc" id="agroup___image_html_ga5846e12b62d2ddd99a1d5309a4974574"><div class="ttname"><a href="group___image.html#ga5846e12b62d2ddd99a1d5309a4974574">doodle::begin_drawing_to_image</a></div><div class="ttdeci">void begin_drawing_to_image(int image_width, int image_height, bool apply_antialiasing=false)</div><div class="ttdoc">Redirect all draw command to draw to an image.</div></div>
+<div class="ttc" id="agroup___shape_html_ga4081661ba614124ef46d1e2ac01f5ad6"><div class="ttname"><a href="group___shape.html#ga4081661ba614124ef46d1e2ac01f5ad6">doodle::set_outline_width</a></div><div class="ttdeci">void set_outline_width(double line_width) noexcept</div><div class="ttdoc">Sets the width of the outline used for lines and the border around shapes. All widths are set in unit...</div></div>
+<div class="ttc" id="agroup___shape_html_ga88f08686eb0cc501e50ac6e3eab61787"><div class="ttname"><a href="group___shape.html#ga88f08686eb0cc501e50ac6e3eab61787">doodle::pop_settings</a></div><div class="ttdeci">void pop_settings() noexcept</div><div class="ttdoc">The pop_settings() function restores to the previous style settings and transformations,...</div></div>
+<div class="ttc" id="agroup___shape_html_gad10534841a57f844e1f9acc8b91115cc"><div class="ttname"><a href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">doodle::draw_ellipse</a></div><div class="ttdeci">void draw_ellipse(double x, double y, double width, double height=0) noexcept</div><div class="ttdoc">Draws an ellipse (oval) to the screen.</div></div>
+<div class="ttc" id="agroup___shape_html_gafa718880dada53130d123e015863f930"><div class="ttname"><a href="group___shape.html#gafa718880dada53130d123e015863f930">doodle::push_settings</a></div><div class="ttdeci">void push_settings() noexcept</div><div class="ttdoc">The push_settings() function saves the current drawing style settings and transformations,...</div></div>
+</div><!-- fragment --><div class="image">
+<img src="end_drawing_to_image.png" alt=""/>
 </div>
  
 </div>
