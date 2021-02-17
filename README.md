@@ -1,8 +1,8 @@
 # doodle-release
 
-Version 0.2.4
+Version 0.2.5
 
-Binaries built with Visual Studio 2019 Version **`16.8.4`**
+Binaries built with Visual Studio 2019 Version **`16.8.5`**
 
 Make sure your version is not older than this.
 
@@ -48,6 +48,8 @@ int main(void)
 ## Notable Changes
 
 - added functionality to draw to an image rather than the window
+    * Fixed bug where generated image was appearing upside down
+    * Anti-Aliasing now turned on by default when drawing to image
 - The doodle Image class can now be copied like normal objects. 
     * It is more flexible when it is created in a global scope, so debug builds shouldn't see any popups from OpenGL asserts.
     * Got rid of the `Image::color` type. Now there is only one color type, which is `doodle::Color`

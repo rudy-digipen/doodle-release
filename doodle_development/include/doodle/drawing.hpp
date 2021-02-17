@@ -934,7 +934,7 @@ namespace doodle
      * \include begin_drawing_to_image.cpp
      *
      */
-    void begin_drawing_to_image(int image_width, int image_height, bool apply_antialiasing = false);
+    void begin_drawing_to_image(int image_width, int image_height, bool apply_antialiasing = true);
 
     /**
      * \brief End a session of drawing to an image
