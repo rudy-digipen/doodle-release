@@ -123,9 +123,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gae34c0040d76b737adb3bdd678dc863bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___image.html#gae34c0040d76b737adb3bdd678dc863bc">doodle::set_image_mode</a> (<a class="el" href="group___shape.html#ga71d46fd68c6ad681f75ff8a08999f146">RectMode</a> mode) noexcept</td></tr>
 <tr class="memdesc:gae34c0040d76b737adb3bdd678dc863bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifies the location from which textures are drawn by changing the way in which parameters given to <a class="el" href="group___image.html#gaacfb580725cc0cb1540d3919079ae7ad" title="Draw an entire image to the screen.">draw_image()</a> are interpreted.  <a href="group___image.html#gae34c0040d76b737adb3bdd678dc863bc">More...</a><br /></td></tr>
 <tr class="separator:gae34c0040d76b737adb3bdd678dc863bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5846e12b62d2ddd99a1d5309a4974574"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___image.html#ga5846e12b62d2ddd99a1d5309a4974574">doodle::begin_drawing_to_image</a> (int image_width, int image_height, bool apply_antialiasing=false)</td></tr>
-<tr class="memdesc:ga5846e12b62d2ddd99a1d5309a4974574"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redirect all draw command to draw to an image.  <a href="group___image.html#ga5846e12b62d2ddd99a1d5309a4974574">More...</a><br /></td></tr>
-<tr class="separator:ga5846e12b62d2ddd99a1d5309a4974574"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade99b48af7186dec762060f576ccc196"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___image.html#gade99b48af7186dec762060f576ccc196">doodle::begin_drawing_to_image</a> (int image_width, int image_height, bool apply_antialiasing=true)</td></tr>
+<tr class="memdesc:gade99b48af7186dec762060f576ccc196"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redirect all draw command to draw to an image.  <a href="group___image.html#gade99b48af7186dec762060f576ccc196">More...</a><br /></td></tr>
+<tr class="separator:gade99b48af7186dec762060f576ccc196"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga592cfddc99dfdf8f8b05185c579d3b0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classdoodle_1_1_image.html">Image</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___image.html#ga592cfddc99dfdf8f8b05185c579d3b0f">doodle::end_drawing_to_image</a> (bool smooth_texture=false)</td></tr>
 <tr class="memdesc:ga592cfddc99dfdf8f8b05185c579d3b0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">End a session of drawing to an image.  <a href="group___image.html#ga592cfddc99dfdf8f8b05185c579d3b0f">More...</a><br /></td></tr>
 <tr class="separator:ga592cfddc99dfdf8f8b05185c579d3b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,8 +138,8 @@ Functions</h2></td></tr>
 </li>
 </ul>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga5846e12b62d2ddd99a1d5309a4974574"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga5846e12b62d2ddd99a1d5309a4974574">&#9670;&nbsp;</a></span>begin_drawing_to_image()</h2>
+<a id="gade99b48af7186dec762060f576ccc196"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gade99b48af7186dec762060f576ccc196">&#9670;&nbsp;</a></span>begin_drawing_to_image()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -160,7 +160,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>apply_antialiasing</em> = <code>false</code>&#160;</td>
+          <td class="paramname"><em>apply_antialiasing</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -204,9 +204,9 @@ Functions</h2></td></tr>
 <div class="line"> </div>
 <div class="line">Image GenerateBearImage(<span class="keywordtype">bool</span> apply_antialising)</div>
 <div class="line">{</div>
-<div class="line">    <a class="code" href="group___image.html#ga5846e12b62d2ddd99a1d5309a4974574">begin_drawing_to_image</a>(250, 250, apply_antialising);</div>
+<div class="line">    <a class="code" href="group___image.html#gade99b48af7186dec762060f576ccc196">begin_drawing_to_image</a>(250, 250, apply_antialising);</div>
 <div class="line">    <a class="code" href="group___shape.html#gafa718880dada53130d123e015863f930">push_settings</a>();</div>
-<div class="line">    <a class="code" href="group___shape.html#gad429c500464d69d96491aeabaf02a092">set_frame_of_reference</a>(<a class="code" href="group___shape.html#gga6f5252fe1a8bb42b0dcb92bb37f74566a3247f1507bc5f5a02af38a6e75b51b06">FrameOfReference::RightHanded_OriginBottomLeft</a>);</div>
+<div class="line">    <a class="code" href="group___shape.html#gad429c500464d69d96491aeabaf02a092">set_frame_of_reference</a>(<a class="code" href="group___shape.html#gga6f5252fe1a8bb42b0dcb92bb37f74566a170c1fce79f38aff0fa84a6e0f754b5d">FrameOfReference::LeftHanded_OriginTopLeft</a>);</div>
 <div class="line">    <a class="code" href="group___transform.html#gac6309e569e1df1524a83f9e32d723aaa">apply_scale</a>(0.5);</div>
 <div class="line">    <a class="code" href="group___shape.html#ga4081661ba614124ef46d1e2ac01f5ad6">set_outline_width</a>(3);</div>
 <div class="line">    <a class="code" href="group___color.html#ga388ad96b9e870b646ff128e494e13543">set_fill_color</a>(87, 27, 0);</div>
@@ -249,16 +249,16 @@ Functions</h2></td></tr>
 <div class="ttc" id="agroup___environment_html_ga9aadbff55be8829543f55e80a837c4d6"><div class="ttname"><a href="group___environment.html#ga9aadbff55be8829543f55e80a837c4d6">doodle::Width</a></div><div class="ttdeci">int Width</div><div class="ttdoc">System variable that stores the width of the drawing canvas. This value is set by the desired_width p...</div></div>
 <div class="ttc" id="agroup___environment_html_ga9e499952e3a46f046da8720cc990a5bd"><div class="ttname"><a href="group___environment.html#ga9e499952e3a46f046da8720cc990a5bd">doodle::is_window_closed</a></div><div class="ttdeci">bool is_window_closed() noexcept</div><div class="ttdoc">Is the window closed?</div></div>
 <div class="ttc" id="agroup___environment_html_gad97282241c719711c6f891261f389dd0"><div class="ttname"><a href="group___environment.html#gad97282241c719711c6f891261f389dd0">doodle::update_window</a></div><div class="ttdeci">void update_window() noexcept</div><div class="ttdoc">Update the doodle application.</div></div>
-<div class="ttc" id="agroup___image_html_ga5846e12b62d2ddd99a1d5309a4974574"><div class="ttname"><a href="group___image.html#ga5846e12b62d2ddd99a1d5309a4974574">doodle::begin_drawing_to_image</a></div><div class="ttdeci">void begin_drawing_to_image(int image_width, int image_height, bool apply_antialiasing=false)</div><div class="ttdoc">Redirect all draw command to draw to an image.</div></div>
 <div class="ttc" id="agroup___image_html_ga592cfddc99dfdf8f8b05185c579d3b0f"><div class="ttname"><a href="group___image.html#ga592cfddc99dfdf8f8b05185c579d3b0f">doodle::end_drawing_to_image</a></div><div class="ttdeci">Image end_drawing_to_image(bool smooth_texture=false)</div><div class="ttdoc">End a session of drawing to an image.</div></div>
 <div class="ttc" id="agroup___image_html_gaacfb580725cc0cb1540d3919079ae7ad"><div class="ttname"><a href="group___image.html#gaacfb580725cc0cb1540d3919079ae7ad">doodle::draw_image</a></div><div class="ttdeci">void draw_image(const Image &amp;image, double x, double y) noexcept</div><div class="ttdoc">Draw an entire image to the screen.</div></div>
+<div class="ttc" id="agroup___image_html_gade99b48af7186dec762060f576ccc196"><div class="ttname"><a href="group___image.html#gade99b48af7186dec762060f576ccc196">doodle::begin_drawing_to_image</a></div><div class="ttdeci">void begin_drawing_to_image(int image_width, int image_height, bool apply_antialiasing=true)</div><div class="ttdoc">Redirect all draw command to draw to an image.</div></div>
 <div class="ttc" id="agroup___image_html_gae34c0040d76b737adb3bdd678dc863bc"><div class="ttname"><a href="group___image.html#gae34c0040d76b737adb3bdd678dc863bc">doodle::set_image_mode</a></div><div class="ttdeci">void set_image_mode(RectMode mode) noexcept</div><div class="ttdoc">Modifies the location from which textures are drawn by changing the way in which parameters given to ...</div></div>
 <div class="ttc" id="agroup___shape_html_ga4081661ba614124ef46d1e2ac01f5ad6"><div class="ttname"><a href="group___shape.html#ga4081661ba614124ef46d1e2ac01f5ad6">doodle::set_outline_width</a></div><div class="ttdeci">void set_outline_width(double line_width) noexcept</div><div class="ttdoc">Sets the width of the outline used for lines and the border around shapes. All widths are set in unit...</div></div>
 <div class="ttc" id="agroup___shape_html_ga88f08686eb0cc501e50ac6e3eab61787"><div class="ttname"><a href="group___shape.html#ga88f08686eb0cc501e50ac6e3eab61787">doodle::pop_settings</a></div><div class="ttdeci">void pop_settings() noexcept</div><div class="ttdoc">The pop_settings() function restores to the previous style settings and transformations,...</div></div>
 <div class="ttc" id="agroup___shape_html_gad10534841a57f844e1f9acc8b91115cc"><div class="ttname"><a href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">doodle::draw_ellipse</a></div><div class="ttdeci">void draw_ellipse(double x, double y, double width, double height=0) noexcept</div><div class="ttdoc">Draws an ellipse (oval) to the screen.</div></div>
 <div class="ttc" id="agroup___shape_html_gad429c500464d69d96491aeabaf02a092"><div class="ttname"><a href="group___shape.html#gad429c500464d69d96491aeabaf02a092">doodle::set_frame_of_reference</a></div><div class="ttdeci">void set_frame_of_reference(FrameOfReference frame_of_reference) noexcept</div><div class="ttdoc">Change the coordinate system you would like to use when describing your primitives.</div></div>
 <div class="ttc" id="agroup___shape_html_gafa718880dada53130d123e015863f930"><div class="ttname"><a href="group___shape.html#gafa718880dada53130d123e015863f930">doodle::push_settings</a></div><div class="ttdeci">void push_settings() noexcept</div><div class="ttdoc">The push_settings() function saves the current drawing style settings and transformations,...</div></div>
-<div class="ttc" id="agroup___shape_html_gga6f5252fe1a8bb42b0dcb92bb37f74566a3247f1507bc5f5a02af38a6e75b51b06"><div class="ttname"><a href="group___shape.html#gga6f5252fe1a8bb42b0dcb92bb37f74566a3247f1507bc5f5a02af38a6e75b51b06">doodle::FrameOfReference::RightHanded_OriginBottomLeft</a></div><div class="ttdeci">@ RightHanded_OriginBottomLeft</div><div class="ttdoc">The Origin (0,0) is always in the bottom left of the screen. Positive x goes to the right and Positiv...</div></div>
+<div class="ttc" id="agroup___shape_html_gga6f5252fe1a8bb42b0dcb92bb37f74566a170c1fce79f38aff0fa84a6e0f754b5d"><div class="ttname"><a href="group___shape.html#gga6f5252fe1a8bb42b0dcb92bb37f74566a170c1fce79f38aff0fa84a6e0f754b5d">doodle::FrameOfReference::LeftHanded_OriginTopLeft</a></div><div class="ttdeci">@ LeftHanded_OriginTopLeft</div><div class="ttdoc">The Origin (0,0) is always in the top left of the screen. Positive x goes to the right and Positive y...</div></div>
 <div class="ttc" id="agroup___shape_html_gga71d46fd68c6ad681f75ff8a08999f146a4f1f6016fc9f3f2353c0cc7c67b292bd"><div class="ttname"><a href="group___shape.html#gga71d46fd68c6ad681f75ff8a08999f146a4f1f6016fc9f3f2353c0cc7c67b292bd">doodle::RectMode::Center</a></div><div class="ttdeci">@ Center</div><div class="ttdoc">RectMode::CENTER interprets the first two parameters of draw_rectangle() as the shape's center point.</div></div>
 <div class="ttc" id="agroup___transform_html_gac6309e569e1df1524a83f9e32d723aaa"><div class="ttname"><a href="group___transform.html#gac6309e569e1df1524a83f9e32d723aaa">doodle::apply_scale</a></div><div class="ttdeci">void apply_scale(double scale) noexcept</div><div class="ttdoc">Uniformly increases or decreases the size of a shape by expanding and contracting vertices.</div></div>
 <div class="ttc" id="anamespacedoodle_html"><div class="ttname"><a href="namespacedoodle.html">doodle</a></div><div class="ttdef"><b>Definition:</b> <a href="angle_8hpp_source.html#l00010">angle.hpp:11</a></div></div>
@@ -881,13 +881,13 @@ Functions</h2></td></tr>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="doodle_8hpp.html">doodle/doodle.hpp</a>&gt;</span></div>
 <div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacedoodle.html">doodle</a>;</div>
 <div class="line"> </div>
-<div class="line">Image GenerateExampleImage(<span class="keywordtype">bool</span> smooth_filter);</div>
+<div class="line">Image GenerateOFaceImage(<span class="keywordtype">bool</span> smooth_filter);</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)</div>
 <div class="line">{</div>
 <div class="line">    <a class="code" href="group___environment.html#ga6afd5ec8409ff37b931ed326a438ca8f">create_window</a>(480, 320);</div>
-<div class="line">    <span class="keyword">const</span> Image smiley_nosmooth = GenerateExampleImage(<span class="keyword">false</span>);</div>
-<div class="line">    <span class="keyword">const</span> Image smiley_smooth   = GenerateExampleImage(<span class="keyword">true</span>);</div>
+<div class="line">    <span class="keyword">const</span> Image smiley_nosmooth = GenerateOFaceImage(<span class="keyword">false</span>);</div>
+<div class="line">    <span class="keyword">const</span> Image smiley_smooth   = GenerateOFaceImage(<span class="keyword">true</span>);</div>
 <div class="line">    <a class="code" href="group___image.html#gae34c0040d76b737adb3bdd678dc863bc">set_image_mode</a>(<a class="code" href="group___shape.html#gga71d46fd68c6ad681f75ff8a08999f146a4f1f6016fc9f3f2353c0cc7c67b292bd">RectMode::Center</a>);</div>
 <div class="line">    <span class="keywordflow">while</span> (!<a class="code" href="group___environment.html#ga9e499952e3a46f046da8720cc990a5bd">is_window_closed</a>())</div>
 <div class="line">    {</div>
@@ -902,29 +902,28 @@ Functions</h2></td></tr>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line">Image GenerateExampleImage(<span class="keywordtype">bool</span> smooth_filter)</div>
+<div class="line">Image GenerateOFaceImage(<span class="keywordtype">bool</span> smooth_filter)</div>
 <div class="line">{</div>
 <div class="line">    constexpr <span class="keywordtype">double</span> diameter     = 100.0;</div>
 <div class="line">    constexpr <span class="keywordtype">double</span> size_scale   = 0.25;</div>
 <div class="line">    constexpr <span class="keywordtype">int</span>    image_width  = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(diameter);</div>
 <div class="line">    constexpr <span class="keywordtype">int</span>    image_height = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(diameter);</div>
-<div class="line">    <a class="code" href="group___image.html#ga5846e12b62d2ddd99a1d5309a4974574">begin_drawing_to_image</a>(image_width, image_height);</div>
+<div class="line">    <a class="code" href="group___image.html#gade99b48af7186dec762060f576ccc196">begin_drawing_to_image</a>(image_width, image_height);</div>
 <div class="line">    <a class="code" href="group___shape.html#gafa718880dada53130d123e015863f930">push_settings</a>();</div>
 <div class="line">    <a class="code" href="group___color.html#ga388ad96b9e870b646ff128e494e13543">set_fill_color</a>(255, 255, 0);</div>
 <div class="line"> </div>
 <div class="line">    <a class="code" href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">draw_ellipse</a>(0, 0, diameter);</div>
 <div class="line"> </div>
-<div class="line">    <a class="code" href="group___color.html#ga388ad96b9e870b646ff128e494e13543">set_fill_color</a>(255);</div>
-<div class="line">    <a class="code" href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">draw_ellipse</a>(-67 * size_scale, -67 * size_scale, diameter / 10);</div>
-<div class="line">    <a class="code" href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">draw_ellipse</a>(67 * size_scale, -67 * size_scale, diameter / 10);</div>
+<div class="line">    <a class="code" href="group___color.html#ga388ad96b9e870b646ff128e494e13543">set_fill_color</a>(255); <span class="comment">// eyes</span></div>
+<div class="line">    <a class="code" href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">draw_ellipse</a>(-67 * size_scale, 67 * size_scale, diameter / 10);</div>
+<div class="line">    <a class="code" href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">draw_ellipse</a>(67 * size_scale, 67 * size_scale, diameter / 10);</div>
 <div class="line">    <a class="code" href="group___color.html#ga388ad96b9e870b646ff128e494e13543">set_fill_color</a>(0);</div>
-<div class="line">    <a class="code" href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">draw_ellipse</a>(-67 * size_scale, -67 * size_scale, diameter / 20);</div>
-<div class="line">    <a class="code" href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">draw_ellipse</a>(67 * size_scale, -67 * size_scale, diameter / 20);</div>
+<div class="line">    <a class="code" href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">draw_ellipse</a>(-67 * size_scale, 67 * size_scale, diameter / 20);</div>
+<div class="line">    <a class="code" href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">draw_ellipse</a>(67 * size_scale, 67 * size_scale, diameter / 20);</div>
 <div class="line"> </div>
-<div class="line"> </div>
-<div class="line">    <a class="code" href="group___shape.html#ga4081661ba614124ef46d1e2ac01f5ad6">set_outline_width</a>(3.0);</div>
+<div class="line">    <a class="code" href="group___shape.html#ga4081661ba614124ef46d1e2ac01f5ad6">set_outline_width</a>(3.0); <span class="comment">// mouth</span></div>
 <div class="line">    <a class="code" href="group___color.html#ga6527ae09583f7a13f7ee9318210ce7bd">no_fill</a>();</div>
-<div class="line">    <a class="code" href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">draw_ellipse</a>(0, 67 * size_scale, diameter / 2 * size_scale, 90 * size_scale);</div>
+<div class="line">    <a class="code" href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">draw_ellipse</a>(0, -67 * size_scale, diameter / 2 * size_scale, 90 * size_scale);</div>
 <div class="line"> </div>
 <div class="line">    <a class="code" href="group___shape.html#ga88f08686eb0cc501e50ac6e3eab61787">pop_settings</a>();</div>
 <div class="line"> </div>

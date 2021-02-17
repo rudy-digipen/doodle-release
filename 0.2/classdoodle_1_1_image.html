@@ -1872,13 +1872,13 @@ Friends</h2></td></tr>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="doodle_8hpp.html">doodle/doodle.hpp</a>&gt;</span></div>
 <div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacedoodle.html">doodle</a>;</div>
 <div class="line"> </div>
-<div class="line"><a class="code" href="classdoodle_1_1_image.html#a040540c826b461c1e387a7125268d2bc">Image</a> GenerateExampleImage(<span class="keywordtype">bool</span> smooth_filter);</div>
+<div class="line"><a class="code" href="classdoodle_1_1_image.html#a040540c826b461c1e387a7125268d2bc">Image</a> GenerateOFaceImage(<span class="keywordtype">bool</span> smooth_filter);</div>
 <div class="line"> </div>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)</div>
 <div class="line">{</div>
 <div class="line">    <a class="code" href="group___environment.html#ga6afd5ec8409ff37b931ed326a438ca8f">create_window</a>(480, 320);</div>
-<div class="line">    <span class="keyword">const</span> <a class="code" href="classdoodle_1_1_image.html#a040540c826b461c1e387a7125268d2bc">Image</a> smiley_nosmooth = GenerateExampleImage(<span class="keyword">false</span>);</div>
-<div class="line">    <span class="keyword">const</span> <a class="code" href="classdoodle_1_1_image.html#a040540c826b461c1e387a7125268d2bc">Image</a> smiley_smooth   = GenerateExampleImage(<span class="keyword">true</span>);</div>
+<div class="line">    <span class="keyword">const</span> <a class="code" href="classdoodle_1_1_image.html#a040540c826b461c1e387a7125268d2bc">Image</a> smiley_nosmooth = GenerateOFaceImage(<span class="keyword">false</span>);</div>
+<div class="line">    <span class="keyword">const</span> <a class="code" href="classdoodle_1_1_image.html#a040540c826b461c1e387a7125268d2bc">Image</a> smiley_smooth   = GenerateOFaceImage(<span class="keyword">true</span>);</div>
 <div class="line">    <a class="code" href="group___image.html#gae34c0040d76b737adb3bdd678dc863bc">set_image_mode</a>(<a class="code" href="group___shape.html#gga71d46fd68c6ad681f75ff8a08999f146a4f1f6016fc9f3f2353c0cc7c67b292bd">RectMode::Center</a>);</div>
 <div class="line">    <span class="keywordflow">while</span> (!<a class="code" href="group___environment.html#ga9e499952e3a46f046da8720cc990a5bd">is_window_closed</a>())</div>
 <div class="line">    {</div>
@@ -1893,29 +1893,28 @@ Friends</h2></td></tr>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line"><a class="code" href="classdoodle_1_1_image.html#a040540c826b461c1e387a7125268d2bc">Image</a> GenerateExampleImage(<span class="keywordtype">bool</span> smooth_filter)</div>
+<div class="line"><a class="code" href="classdoodle_1_1_image.html#a040540c826b461c1e387a7125268d2bc">Image</a> GenerateOFaceImage(<span class="keywordtype">bool</span> smooth_filter)</div>
 <div class="line">{</div>
 <div class="line">    constexpr <span class="keywordtype">double</span> diameter     = 100.0;</div>
 <div class="line">    constexpr <span class="keywordtype">double</span> size_scale   = 0.25;</div>
 <div class="line">    constexpr <span class="keywordtype">int</span>    image_width  = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(diameter);</div>
 <div class="line">    constexpr <span class="keywordtype">int</span>    image_height = <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(diameter);</div>
-<div class="line">    <a class="code" href="group___image.html#ga5846e12b62d2ddd99a1d5309a4974574">begin_drawing_to_image</a>(image_width, image_height);</div>
+<div class="line">    <a class="code" href="group___image.html#gade99b48af7186dec762060f576ccc196">begin_drawing_to_image</a>(image_width, image_height);</div>
 <div class="line">    <a class="code" href="group___shape.html#gafa718880dada53130d123e015863f930">push_settings</a>();</div>
 <div class="line">    <a class="code" href="group___color.html#ga388ad96b9e870b646ff128e494e13543">set_fill_color</a>(255, 255, 0);</div>
 <div class="line"> </div>
 <div class="line">    <a class="code" href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">draw_ellipse</a>(0, 0, diameter);</div>
 <div class="line"> </div>
-<div class="line">    <a class="code" href="group___color.html#ga388ad96b9e870b646ff128e494e13543">set_fill_color</a>(255);</div>
-<div class="line">    <a class="code" href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">draw_ellipse</a>(-67 * size_scale, -67 * size_scale, diameter / 10);</div>
-<div class="line">    <a class="code" href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">draw_ellipse</a>(67 * size_scale, -67 * size_scale, diameter / 10);</div>
+<div class="line">    <a class="code" href="group___color.html#ga388ad96b9e870b646ff128e494e13543">set_fill_color</a>(255); <span class="comment">// eyes</span></div>
+<div class="line">    <a class="code" href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">draw_ellipse</a>(-67 * size_scale, 67 * size_scale, diameter / 10);</div>
+<div class="line">    <a class="code" href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">draw_ellipse</a>(67 * size_scale, 67 * size_scale, diameter / 10);</div>
 <div class="line">    <a class="code" href="group___color.html#ga388ad96b9e870b646ff128e494e13543">set_fill_color</a>(0);</div>
-<div class="line">    <a class="code" href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">draw_ellipse</a>(-67 * size_scale, -67 * size_scale, diameter / 20);</div>
-<div class="line">    <a class="code" href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">draw_ellipse</a>(67 * size_scale, -67 * size_scale, diameter / 20);</div>
+<div class="line">    <a class="code" href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">draw_ellipse</a>(-67 * size_scale, 67 * size_scale, diameter / 20);</div>
+<div class="line">    <a class="code" href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">draw_ellipse</a>(67 * size_scale, 67 * size_scale, diameter / 20);</div>
 <div class="line"> </div>
-<div class="line"> </div>
-<div class="line">    <a class="code" href="group___shape.html#ga4081661ba614124ef46d1e2ac01f5ad6">set_outline_width</a>(3.0);</div>
+<div class="line">    <a class="code" href="group___shape.html#ga4081661ba614124ef46d1e2ac01f5ad6">set_outline_width</a>(3.0); <span class="comment">// mouth</span></div>
 <div class="line">    <a class="code" href="group___color.html#ga6527ae09583f7a13f7ee9318210ce7bd">no_fill</a>();</div>
-<div class="line">    <a class="code" href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">draw_ellipse</a>(0, 67 * size_scale, diameter / 2 * size_scale, 90 * size_scale);</div>
+<div class="line">    <a class="code" href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">draw_ellipse</a>(0, -67 * size_scale, diameter / 2 * size_scale, 90 * size_scale);</div>
 <div class="line"> </div>
 <div class="line">    <a class="code" href="group___shape.html#ga88f08686eb0cc501e50ac6e3eab61787">pop_settings</a>();</div>
 <div class="line"> </div>
@@ -1924,7 +1923,7 @@ Friends</h2></td></tr>
 <div class="ttc" id="aclassdoodle_1_1_image_html_afc985c3c0ed467cfc5cb4affa783ec47"><div class="ttname"><a href="classdoodle_1_1_image.html#afc985c3c0ed467cfc5cb4affa783ec47">doodle::Image::end_drawing_to_image</a></div><div class="ttdeci">friend Image end_drawing_to_image(bool smooth_texture)</div><div class="ttdoc">End a session of drawing to an image.</div></div>
 <div class="ttc" id="agroup___color_html_ga388ad96b9e870b646ff128e494e13543"><div class="ttname"><a href="group___color.html#ga388ad96b9e870b646ff128e494e13543">doodle::set_fill_color</a></div><div class="ttdeci">void set_fill_color(HexColor color) noexcept</div><div class="ttdoc">Sets the color used to fill shapes to the specified HexColor.</div></div>
 <div class="ttc" id="agroup___color_html_ga6527ae09583f7a13f7ee9318210ce7bd"><div class="ttname"><a href="group___color.html#ga6527ae09583f7a13f7ee9318210ce7bd">doodle::no_fill</a></div><div class="ttdeci">void no_fill() noexcept</div><div class="ttdoc">Disables filling geometry.</div></div>
-<div class="ttc" id="agroup___image_html_ga5846e12b62d2ddd99a1d5309a4974574"><div class="ttname"><a href="group___image.html#ga5846e12b62d2ddd99a1d5309a4974574">doodle::begin_drawing_to_image</a></div><div class="ttdeci">void begin_drawing_to_image(int image_width, int image_height, bool apply_antialiasing=false)</div><div class="ttdoc">Redirect all draw command to draw to an image.</div></div>
+<div class="ttc" id="agroup___image_html_gade99b48af7186dec762060f576ccc196"><div class="ttname"><a href="group___image.html#gade99b48af7186dec762060f576ccc196">doodle::begin_drawing_to_image</a></div><div class="ttdeci">void begin_drawing_to_image(int image_width, int image_height, bool apply_antialiasing=true)</div><div class="ttdoc">Redirect all draw command to draw to an image.</div></div>
 <div class="ttc" id="agroup___shape_html_ga4081661ba614124ef46d1e2ac01f5ad6"><div class="ttname"><a href="group___shape.html#ga4081661ba614124ef46d1e2ac01f5ad6">doodle::set_outline_width</a></div><div class="ttdeci">void set_outline_width(double line_width) noexcept</div><div class="ttdoc">Sets the width of the outline used for lines and the border around shapes. All widths are set in unit...</div></div>
 <div class="ttc" id="agroup___shape_html_ga88f08686eb0cc501e50ac6e3eab61787"><div class="ttname"><a href="group___shape.html#ga88f08686eb0cc501e50ac6e3eab61787">doodle::pop_settings</a></div><div class="ttdeci">void pop_settings() noexcept</div><div class="ttdoc">The pop_settings() function restores to the previous style settings and transformations,...</div></div>
 <div class="ttc" id="agroup___shape_html_gad10534841a57f844e1f9acc8b91115cc"><div class="ttname"><a href="group___shape.html#gad10534841a57f844e1f9acc8b91115cc">doodle::draw_ellipse</a></div><div class="ttdeci">void draw_ellipse(double x, double y, double width, double height=0) noexcept</div><div class="ttdoc">Draws an ellipse (oval) to the screen.</div></div>
