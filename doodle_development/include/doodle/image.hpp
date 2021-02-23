@@ -241,7 +241,7 @@ namespace doodle
                                 int texel_y, int texel_width, int texel_height) noexcept;
         friend Image end_drawing_to_image(bool smooth_texture);
 
-    public:
+    private:
         explicit Image(const std::shared_ptr<ImageImpl>& impl);
     };
     /** @} */
