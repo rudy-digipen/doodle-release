@@ -1,7 +1,7 @@
 var searchData=
 [
   ['i_97',['I',['../namespacedoodle.html#ac5fa42d49165623a305f7ccd5607656eadd7536794b63bf90eccfd37f9b147d7f',1,'doodle']]],
-  ['image_98',['Image',['../classdoodle_1_1_image.html',1,'doodle::Image'],['../classdoodle_1_1_image.html#a30b00699217159c1e64a006052f8ecfb',1,'doodle::Image::Image(int width, int height, bool smooth_it=false)'],['../classdoodle_1_1_image.html#aadfdb91d5e408f6ecc1f1a4a8cdcfdf4',1,'doodle::Image::Image(const std::filesystem::path &amp;file_path, bool smooth_it=false)'],['../classdoodle_1_1_image.html#a040540c826b461c1e387a7125268d2bc',1,'doodle::Image::Image()'],['../classdoodle_1_1_image.html#ab7a630aeef1603b70053e87a71e3338b',1,'doodle::Image::Image(const std::shared_ptr&lt; ImageImpl &gt; &amp;impl)'],['../group___image.html',1,'(Global Namespace)']]],
+  ['image_98',['Image',['../classdoodle_1_1_image.html',1,'doodle::Image'],['../classdoodle_1_1_image.html#a30b00699217159c1e64a006052f8ecfb',1,'doodle::Image::Image(int width, int height, bool smooth_it=false)'],['../classdoodle_1_1_image.html#aadfdb91d5e408f6ecc1f1a4a8cdcfdf4',1,'doodle::Image::Image(const std::filesystem::path &amp;file_path, bool smooth_it=false)'],['../classdoodle_1_1_image.html#a040540c826b461c1e387a7125268d2bc',1,'doodle::Image::Image()'],['../group___image.html',1,'(Global Namespace)']]],
   ['image_2ehpp_99',['image.hpp',['../image_8hpp.html',1,'']]],
   ['input_2ehpp_100',['input.hpp',['../input_8hpp.html',1,'']]],
   ['insert_101',['Insert',['../namespacedoodle.html#ac5fa42d49165623a305f7ccd5607656eaa458be0f08b7e4ff3c0f633c100176c0',1,'doodle']]],

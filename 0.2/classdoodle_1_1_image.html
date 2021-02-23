@@ -150,8 +150,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0fa42e99c931d10e57ea676792408ea0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="structdoodle_1_1_color.html">Color</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoodle_1_1_image.html#a0fa42e99c931d10e57ea676792408ea0">end</a> () const</td></tr>
 <tr class="memdesc:a0fa42e99c931d10e57ea676792408ea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const iterator to the color following the last color of the <a class="el" href="classdoodle_1_1_image.html" title="Image class to store a 2D array of RGBA colors. Also manages an image on the Graphics Card.">Image</a>.  <a href="classdoodle_1_1_image.html#a0fa42e99c931d10e57ea676792408ea0">More...</a><br /></td></tr>
 <tr class="separator:a0fa42e99c931d10e57ea676792408ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a630aeef1603b70053e87a71e3338b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdoodle_1_1_image.html#ab7a630aeef1603b70053e87a71e3338b">Image</a> (const std::shared_ptr&lt; ImageImpl &gt; &amp;impl)</td></tr>
-<tr class="separator:ab7a630aeef1603b70053e87a71e3338b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -216,18 +214,18 @@ Friends</h2></td></tr>
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="image_8hpp_source.html#l00155">155</a> of file <a class="el" href="image_8hpp_source.html">image.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        {</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            PNG,</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            BMP,</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            TGA</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        };</div>
+<p class="definition">Definition at line <a class="el" href="image_8hpp_source.html#l00149">149</a> of file <a class="el" href="image_8hpp_source.html">image.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            PNG,</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            BMP,</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            TGA</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        };</div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a30b00699217159c1e64a006052f8ecfb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30b00699217159c1e64a006052f8ecfb">&#9670;&nbsp;</a></span>Image() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a30b00699217159c1e64a006052f8ecfb">&#9670;&nbsp;</a></span>Image() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -273,7 +271,6 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd>Since this involves talking with the GPU a connection must already be established, so <a class="el" href="group___environment.html#ga6afd5ec8409ff37b931ed326a438ca8f" title="Create a default window.">create_window()</a> must have already been called.</dd></dl>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;cmath&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="doodle_8hpp.html">doodle/doodle.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;exception&gt;</span></div>
@@ -326,7 +323,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="aadfdb91d5e408f6ecc1f1a4a8cdcfdf4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadfdb91d5e408f6ecc1f1a4a8cdcfdf4">&#9670;&nbsp;</a></span>Image() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aadfdb91d5e408f6ecc1f1a4a8cdcfdf4">&#9670;&nbsp;</a></span>Image() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -373,7 +370,6 @@ Friends</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section pre"><dt>Precondition</dt><dd>Since this involves talking with the GPU a connection must already be established, so <a class="el" href="group___environment.html#ga6afd5ec8409ff37b931ed326a438ca8f" title="Create a default window.">create_window()</a> must have already been called.</dd></dl>
 <p>The following example uses this orange hero image file. <img src="orange_hero.png" alt="" class="inline"/></p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="doodle_8hpp.html">doodle/doodle.hpp</a>&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;exception&gt;</span></div>
@@ -409,7 +405,7 @@ Friends</h2></td></tr>
 </div>
 </div>
 <a id="a040540c826b461c1e387a7125268d2bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a040540c826b461c1e387a7125268d2bc">&#9670;&nbsp;</a></span>Image() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a040540c826b461c1e387a7125268d2bc">&#9670;&nbsp;</a></span>Image() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -424,33 +420,6 @@ Friends</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Creates an empty image. </p>
-<dl class="section pre"><dt>Precondition</dt><dd>Since this involves talking with the GPU a connection must already be established, so <a class="el" href="group___environment.html#ga6afd5ec8409ff37b931ed326a438ca8f" title="Create a default window.">create_window()</a> must have already been called. </dd></dl>
-
-</div>
-</div>
-<a id="ab7a630aeef1603b70053e87a71e3338b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7a630aeef1603b70053e87a71e3338b">&#9670;&nbsp;</a></span>Image() <span class="overload">[4/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">doodle::Image::Image </td>
-          <td>(</td>
-          <td class="paramtype">const std::shared_ptr&lt; ImageImpl &gt; &amp;&#160;</td>
-          <td class="paramname"><em>impl</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -1137,10 +1106,10 @@ Friends</h2></td></tr>
 <div class="line"><span class="keywordtype">double</span> calculate_luminance(Color color) noexcept</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// based off of http://alienryderflex.com/hsp.html</span></div>
-<div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> r = color.red / 255.0;</div>
-<div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> g = color.green / 255.0;</div>
-<div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> b = color.blue / 255.0;</div>
-<div class="line">    <span class="keywordflow">return</span> 255 * sqrt(0.299 * r * r + 0.587 * g * g + 0.114 * b * b);</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> r = color.red;</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> g = color.green;</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> b = color.blue;</div>
+<div class="line">    <span class="keywordflow">return</span> sqrt(0.299 * r * r + 0.587 * g * g + 0.114 * b * b);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><a class="code" href="classdoodle_1_1_image.html#a040540c826b461c1e387a7125268d2bc">Image</a> CreateGreyImage(<span class="keyword">const</span> <a class="code" href="classdoodle_1_1_image.html#a040540c826b461c1e387a7125268d2bc">Image</a>&amp; source)</div>
@@ -1223,10 +1192,10 @@ Friends</h2></td></tr>
 <div class="line"><span class="keywordtype">double</span> calculate_luminance(Color color) noexcept</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">// based off of http://alienryderflex.com/hsp.html</span></div>
-<div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> r = color.red / 255.0;</div>
-<div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> g = color.green / 255.0;</div>
-<div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> b = color.blue / 255.0;</div>
-<div class="line">    <span class="keywordflow">return</span> 255 * sqrt(0.299 * r * r + 0.587 * g * g + 0.114 * b * b);</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> r = color.red;</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> g = color.green;</div>
+<div class="line">    <span class="keyword">const</span> <span class="keywordtype">double</span> b = color.blue;</div>
+<div class="line">    <span class="keywordflow">return</span> sqrt(0.299 * r * r + 0.587 * g * g + 0.114 * b * b);</div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><a class="code" href="classdoodle_1_1_image.html#a040540c826b461c1e387a7125268d2bc">Image</a> CreateGreyImage(<span class="keyword">const</span> <a class="code" href="classdoodle_1_1_image.html#a040540c826b461c1e387a7125268d2bc">Image</a>&amp; source)</div>
